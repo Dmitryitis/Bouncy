@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    padding: 75px 0;
+
+    background: #f3f3f3;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer__title {
+    font-size: 1.6rem;
+    color: @black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer__copyright {
+    color: rgb(129, 134, 142);
+    font-size: 0.94rem;
+    
+    margin-bottom: 1rem;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center; 
+    
+    & a{
+        text-decoration: none;
+    }
+}
+
+.footer__social__item{
+    margin-right: 0.5rem;
+    
+    transition: transform 0.3s linear;
+    
+    &:hover{
+      transform: translateY(-5px);
+    }
+}

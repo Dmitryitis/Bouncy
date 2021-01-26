@@ -1,0 +1,164 @@
+// main: ../style.less
+
+.price {
+    max-width: 969px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    
+    @media @tablet{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30%;
+    }
+    
+    @media @mobile{
+        padding: 0 25%;
+    }
+    
+    @media @mobile-sm{
+        padding: 0 20%;
+    }
+    
+    @media (max-width: 446px){
+        padding: 0 10%;
+    }
+}
+
+.price__item {
+    width: 30.3333%;
+    background-color: @white;
+    
+    &:hover{
+       
+        .price__con{
+            display: none;
+        }
+        
+        .price__list{
+            display: flex;
+        }
+        
+        .price__count,
+        .price__time{
+            display: none;
+        }
+        
+        .price__footer{
+            display: flex;
+        }
+    }
+    
+     @media @tablet{
+        margin-bottom: 3rem;
+         width: 100%;
+    }
+    
+}
+
+.price__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.price__con {
+    padding: 21px 0;
+    width: 100%;
+    background-color: @green;
+
+    margin-bottom: 4rem;
+    
+    transition: display 1.4s linear;
+}
+
+.price__name {
+    font-size: 1.33rem;
+    color: @white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price__count {
+    font-size: 4.8rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(31, 187, 166);
+    font-weight: bold;
+
+    margin-bottom: 0.3rem;
+    
+    transition: display 1.4s linear;
+}
+
+.price__list {
+    display: none;
+    flex-direction: column;
+    
+    margin-bottom: 36px;
+    
+    transition: display 1.4s linear;
+}
+
+.price__list-item {
+    font-size: 1.2rem;
+    color: rgb(129, 134, 142);
+    line-height: 2.143;
+
+}
+
+li{
+    text-align: left;
+    display: block;
+}
+
+ul{
+    
+}
+
+.price__time {
+    font-size: 1.8rem;
+    color: rgb(129, 134, 142);
+
+    margin-bottom: 80px;
+    
+    transition: display 1.4s linear;
+}
+
+.price__footer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 0;
+    width: 100%;
+    background-color: @green;
+    
+    transition: display 1.4s linear;
+}
+
+.price__footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: @white;
+    text-align: center;
+}
+
+.arrow-price {
+    width: 10px;
+    height: 10px;
+
+    border-top: 2px solid @white;
+    border-right: 2px solid @white;
+
+    transform: rotate(45deg);
+
+    margin-left: 10px;
+
+}

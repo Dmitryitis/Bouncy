@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    height: 100%;
+
+    @media @tablet {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+
+        position: absolute;
+        height: inherit;
+        top: 100%;
+        right: 0;
+        z-index: 3;
+
+        background: #70624c;
+
+    }
+}
+
+.active {
+    display: flex;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: @white;
+    font-size: 1.06rem;
+    padding: 6px 10px;
+
+    border: 2px solid transparent;
+    transition: border-radius 0.3s linear;
+    margin-right: 1rem;
+
+
+    &:hover {
+        border-color: @white;
+        border-radius: 25px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

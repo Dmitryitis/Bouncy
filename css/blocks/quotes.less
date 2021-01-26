@@ -1,0 +1,90 @@
+// main: ../style.less
+
+.quotes {
+    display: flex;
+    width: 100%;
+
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+}
+
+.quotes__info {
+    width: 48%;
+
+    display: flex;
+    flex-direction: column;
+
+    @media @tablet {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.quotes__title {
+    font-size: 1.3rem;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: @white;
+
+    margin-bottom: 3rem;
+}
+
+.quotes__text {
+    font-size: 1.06rem;
+    color: rgb(178, 179, 179);
+    line-height: 1.75;
+
+    margin-bottom: 1.6rem;
+    
+     @media @tablet{
+        padding: 0 10rem;
+    }
+    
+    @media @mobile{
+        padding: 0;
+    }
+}
+
+.quotes__author,
+.quotes__prof {
+    font-size: 0.94rem;
+    color: rgb(178, 179, 179);
+    text-transform: uppercase;
+    line-height: 1.786;
+    
+     @media @tablet{
+        margin-bottom: 4rem;
+    }
+}
+
+
+.quotes__photo {
+    width: 49%;
+
+    position: relative;
+
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.quotes__img {
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: -50%;
+    right: 0;
+    z-index: 1;
+
+    @media @tablet {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate3d(-50%,-50%,0);
+    }
+}

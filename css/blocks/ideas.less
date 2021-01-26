@@ -1,0 +1,81 @@
+// main: ../style.less
+
+.ideas {
+    padding: 0 1.5rem;
+
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+.ideas__icons {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2.6rem;
+}
+
+.ideas__item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #81868e;
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: background 0.3s linear;
+    margin-right: 1.6rem;
+
+    &:hover {
+        background-color: #19bd9a;
+    }
+}
+
+.ideas__title {
+    font-size: 1.3rem;
+    color: @black;
+
+    margin-bottom: 1.06rem;
+    
+    @media @mobile{
+        text-align: center;
+    }
+}
+
+.ideas__text {
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.ideas__text-left {
+    font-size: 1.06rem;
+    color: @grey;
+    line-height: 1.75;
+
+    @media @mobile{
+        margin-bottom: 2rem;
+    }
+}
+
+.ideas__text-right {
+    font-size: 1.06rem;
+    color: @grey;
+    line-height: 1.75;
+
+    margin-left: 15rem;
+    
+     @media @mobile{
+        margin-left: 0;
+    }
+}

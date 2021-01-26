@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    
+    @media @fold{
+        flex-direction: column;
+    }
+}
+
+.subscribe__email {
+    background: none;
+    border: 1px solid #81868e;
+    color: @white;
+
+    height: 35px;
+    width: 300px;
+
+    margin-right: 10px;
+
+    &::placeholder {
+        padding-left: 15px;
+        font-size: 0.94rem;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(207, 211, 212);
+        font-weight: 200;
+    }
+    
+    @media @fold{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.subscribe__btn {
+    padding: 5px 30px;
+
+    background-color: @green;
+    border: 0;
+    margin: 0;
+
+    font-size: 0.94rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+
+    @media @fold{
+        width: 100%;
+    }
+
+    &:focus {
+        outline: 2;
+    }
+    
+    &:hover{
+        background-color: fade(@green, 70%);
+    }
+}

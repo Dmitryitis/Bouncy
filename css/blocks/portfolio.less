@@ -1,0 +1,275 @@
+// main: ../style.less
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3rem;
+    
+    @media (max-width: 508px){
+        flex-direction: column;
+    }
+}
+
+.portfolio__link {
+    text-decoration: none;
+    font-size: 1.06rem;
+    color: @black;
+
+    margin-right: 2rem;
+    position: relative;
+
+    transition: width 0.6s linear;
+
+    &:after {
+        content: "";
+
+        background-color: rgb(25, 189, 154);
+        width: 0;
+        height: 1.5px;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        left: 50%;
+        z-index: 1;
+
+        transition: all 0.2s linear;
+
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+            left: 0
+        }
+    }
+
+    @media @mobile {
+        font-size: 0.7rem;
+    }
+    
+     @media (max-width: 508px){
+        margin-bottom: 1rem;
+         font-size: 1rem;
+    }
+}
+
+.portfolio__inner {
+    width: 100%;
+
+    display: flex;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.portfolio__col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    width: 25%;
+
+    @media @tablet {
+        width: 35%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media @mobile {
+        width: 55%;
+    }
+}
+
+.marg-right{
+    margin-right: 0;
+}
+
+.portfolio__item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    background: linear-gradient(to bottom, #2c2c2e, #303032);
+    cursor: pointer;
+    margin-bottom: 10px;
+
+
+    &:hover .portfolio__img {
+        opacity: 0.3;
+    }
+
+    &:hover .portfolio__info {
+        opacity: 1;
+
+        .portfolio__title {
+            font-size: 1.3rem;
+
+            &:after {
+                width: 21px;
+            }
+
+            @media (max-width: 420px) {
+                font-size: 0.9rem;
+            }
+        }
+
+        .portfolio__text {
+            opacity: 1;
+        }
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.portfolio__info {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+
+    transform: translate3d(-30%, -50%, 0);
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: opacity 0.5s linear;
+}
+
+.portfolio__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    transition: opacity 0.4s linear;
+}
+
+.portfolio__title {
+
+    font-size: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    color: rgb(25, 189, 154);
+    position: relative;
+    margin-bottom: 2rem;
+
+    transition: font-size 0.6s linear;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 2px;
+
+        height: 1px;
+        width: 0;
+
+        background-color: rgb(25, 189, 154);
+
+        transition: width 1s linear;
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 1.1rem;
+    }
+}
+
+
+.portfolio__text {
+    font-size: 0.8rem;
+    opacity: 0;
+    color: rgb(178, 179, 179);
+    line-height: 1.667;
+    margin-bottom: 4rem;
+
+    transition: opacity 0.6s linear;
+
+    &--smile {
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 290px) {
+        font-size: 0.4rem;
+    }
+
+}
+
+.portfolio__social {
+    display: flex;
+}
+
+.portfolio__social--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    cursor: pointer;
+
+    @media (max-width: 290px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.portfolio__footer {
+    width: 100%;
+    padding: 4rem 0;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    background: url(../img/portfolio/images/BOUNCY---CREATIVE-AGENCY-AND-PORTFOLIO-TEMPLATE_03.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.portfolio__footer-text {
+    font-size: 1.3rem;
+    color: @white;
+
+    margin-bottom: 2rem;
+}
+
+.portfolio__footer-btn {
+    padding: 10px 30px;
+    color: @white;
+    font-size: 1.06rem;
+    text-align: center;
+    border-radius: 25px;
+
+
+    text-decoration: none;
+    border: 1px solid @white;
+    
+    transition: border-width 0.4s linear;
+
+    &:hover {
+        border-width: 2px;
+    }
+}

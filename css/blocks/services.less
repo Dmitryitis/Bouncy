@@ -1,0 +1,141 @@
+// main: ../style.less
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.services__info {
+    width: 50%;
+    display: flex;
+
+    margin-right: 2rem;
+
+
+    @media (max-width: 820px) {
+        width: 100%;
+    }
+
+    @media @mobile {
+        margin-right: 0;
+        position: relative;
+    }
+}
+
+.services__logo {
+    display: flex;
+    flex-direction: column;
+
+    @media @mobile {
+        flex-direction: inherit;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.services__logo-item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+    background-color: @grey;
+    text-align: center;
+
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+
+    transition: background 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @green;
+    }
+
+    @media @mobile {
+        margin-right: 1rem;
+    }
+}
+
+.services__text {
+    margin-left: 2.6rem;
+
+    @media @mobile {
+        margin-top: 5.2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.services__title {
+    font-size: 1.3rem;
+    color: @black;
+
+    margin-bottom: 2.2rem;
+}
+
+.services__subtitle {
+    font-size: 1.06rem;
+    color: @grey;
+    line-height: 1.75;
+}
+
+.services__circle {
+    //    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 820px) {
+        width: 100%;
+    }
+
+    @media (max-width:388px) {
+        flex-direction: column;
+    }
+
+}
+
+.services__circle-item {
+   
+
+    margin-top: 4.5rem;
+
+    @media (max-width: 820px) {
+        margin-top: 1rem;
+
+    }
+
+}
+
+#proc {
+    font-size: 20;
+    text-anchor: middle;
+}
+
+#pro {
+    font-size: 20;
+    text-anchor: middle;
+}
+
+#pr {
+    font-size: 20;
+    text-anchor: middle;
+}
+
+
+.text__circle {
+    font-size: 1.06rem;
+    font-family: "Roboto";
+    font-weight: 200;
+    color: rgb(129, 134, 142);
+    text-align: center;
+}

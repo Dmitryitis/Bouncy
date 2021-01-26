@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.header {
+    padding: 2.6rem 0;
+    
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    @media @mobile-sm{
+        padding: 0.6rem 0;
+    }
+    
+    @media @mobile{
+        padding: 0.6rem 1rem;
+    }
+
+}
+
+.fixed{
+    position: fixed;
+    background: #70624c;
+    padding: 1.1rem 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.header__logo {
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: @white;
+    font-family: 'Judson', sans-serif;
+    font-weight: 700;
+}

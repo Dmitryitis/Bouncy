@@ -1,0 +1,167 @@
+// main: ../style.less
+
+.team {
+    margin: 0 auto;
+    max-width: 1030px;
+    width: 100%;
+}
+
+.team__item {
+    display: flex;
+    
+    margin-bottom: 1rem;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+.team__photo {
+    display: block;
+    width: 50%;
+
+    max-width: 100%;
+    height: auto;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.team__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team__info {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+
+    padding-top: 2rem;
+
+    @media @mobile {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.team__name {
+    font-size: 1.3rem;
+    color: @black;
+
+    margin-right: 2rem;
+
+}
+
+.team__prof {
+    font-size: 0.94rem;
+    font-family: "Source Sans Pro", cursive;
+    font-style: italic;
+    font-weight: 200;
+    color: rgb(129, 134, 142);
+    text-transform: uppercase;
+
+    margin-right: 2rem;
+}
+
+
+.team__personal-data {
+    margin-bottom: 2rem;
+
+    position: relative;
+
+    &:after {
+        content: "";
+
+        display: block;
+        height: 4px;
+        width: 42px;
+        background-color: @green;
+
+        position: absolute;
+        bottom: 18px;
+        right: -20px;
+        z-index: 1;
+
+        transform: rotate(90deg);
+
+        @media @mobile {
+            display: none;
+        }
+    }
+}
+
+.team__text {
+    margin-right: 2rem;
+    font-size: 0.94rem;
+    color: rgb(129, 134, 142);
+    line-height: 1.786;
+
+    margin-bottom: 2.5rem;
+}
+
+.team__progress {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-right: 2rem;
+}
+
+.team__progress--item {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+.progress--bar__info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+}
+
+.team__progress--bar-name,
+.team__progress--bar-proc {
+    font-size: 1.06rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(129, 134, 142);
+    text-transform: uppercase;
+}
+
+progress {
+    width: 100%;
+    border: 0;
+    height: 4px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e1e4e9;
+    border: 0;
+    height: 4px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #19bd9a;
+    border: 0;
+    height: 4px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #19bd9a;
+}
+
+
+.team__dots{
+    display: flex;
+    justify-content: center;
+}

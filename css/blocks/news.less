@@ -1,0 +1,92 @@
+// main: ../style.less
+
+
+.news {
+    width: 100%;
+
+    background: url(../img/news/images/bg_06.jpg) center no-repeat;
+    background-size: cover;
+    padding: 63px 0 93px;
+}
+
+.news__header {
+    margin-bottom: 95px;
+}
+
+.news__header-title {
+    font-size: 1.3rem;
+    color: @white;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+
+    margin-bottom: 1.6rem;
+}
+
+.news__header-text {
+    font-size: 0.94rem;
+    color: rgb(178, 179, 179);
+    line-height: 1.786;
+}
+
+.news__content {
+    max-width: 1030px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__title {
+    font-size: 1.3rem;
+    color: rgb(225, 228, 233);
+    margin-bottom: 0.3rem;
+}
+
+.news__author {
+    font-size: 0.94rem;
+    font-family: "Source Sans Pro", cursive;
+    font-style: italic;
+    color: rgb(129, 134, 142);
+    text-transform: uppercase;
+
+    margin-bottom: 0.3rem;
+}
+
+.news__static {
+    font-size: 0.94rem;
+    color: rgb(70, 70, 70);
+    font-family: "Source Sans Pro", sans-serif;
+
+    margin-bottom: 3rem;
+}
+
+.news__text {
+    font-size: 0.94rem;
+    color: rgb(129, 134, 142);
+    line-height: 1.786;
+    
+    width: 58%;
+    margin-bottom: 55px;
+    
+    @media @mobile-sm{
+        width: 100%;
+    }
+}
+
+.news__link{
+    text-decoration: none;
+    font-size: 1.06rem;
+    color: rgb(178, 179, 179);
+    cursor: pointer;
+    
+    transition: text-decoration 0.3s linear;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+

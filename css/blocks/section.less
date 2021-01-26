@@ -1,0 +1,117 @@
+// main: ../style.less
+
+.section {
+    padding: 5.3rem 0;
+    background-color: #f3f3f3;
+}
+
+.section--project {
+    width: 100%;
+    background-color: @white;
+}
+
+.section--quotes{
+    padding: 4.1rem 0 5.3rem;
+    
+    background: url(../img/quotes/images/BOUNCY---CREATIVE-AGENCY-AND-PORTFOLIO-TEMPLATE_02.jpg) center no-repeat;
+    background-size: cover;
+    
+     @media @tablet{
+       padding: 4.1rem 0 0;
+    }
+}
+
+.section--subscribe{
+    background: url(../img/subscribe/images/BOUNCY---CREATIVE-AGENCY-AND-PORTFOLIO-TEMPLATE_06.jpg) center no-repeat;
+    
+    background-size: cover;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+
+.section__title {
+    font-size: 1.3rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: @black;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    margin-bottom: 2.6rem;
+}
+
+.color-white{
+    color: @white;
+}
+
+.section__text {
+    font-size: 0.93rem;
+    color: @grey;
+    line-height: 1.7;
+
+    margin-bottom: 3.3rem;
+}
+
+.section__footer {
+    padding: 3rem 0;
+
+    width: 100%;
+    display: flex;
+
+    background: url("../img/details/images/footer_02.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.section__footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @media (max-width: 850px) {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.section__footer-text {
+    font-size: 1.3rem;
+    color: @white;
+
+    margin-right: 4rem;
+
+    @media (max-width: 850px) {
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+}
+
+.section__footer-btn {
+    border: 1px solid @white;
+    background: none;
+    padding: 0.4rem 1.8rem;
+    cursor: pointer;
+
+    border-radius: 25px;
+    color: @white;
+
+    font-size: 1.06rem;
+    text-align: center;
+
+    &:focus {
+        outline: 0;
+    }
+}

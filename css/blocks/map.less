@@ -1,0 +1,55 @@
+// main: ../style.less
+
+.map {
+    width: 100%;
+
+    padding: 230px 0;
+
+    background: url(../img/map/images/BOUNCY---CREATIVE-AGENCY-AND-PORTFOLIO-TEMPLATE_06.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.map__content {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.map__title {
+    font-size: 1.06rem;
+    color: @white;
+    text-transform: uppercase;
+    
+    margin-right: 1rem;
+}
+
+.map__arrow-intro {
+
+    width: 20px;
+    height: 20px;
+    background-color: @green;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    position: relative;
+    
+    transform: rotate(135deg);
+}
+
+.map__arrow {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    border-top: 2px solid @white;
+    border-right: 2px solid @white;
+    margin-bottom: 2px;
+    
+    transform: translate3d(-50%,-50%,0);
+}

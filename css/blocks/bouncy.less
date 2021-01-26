@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.bouncy {
+    padding: 5.3rem 0;
+}
+
+.bouncy__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    padding: 0 10rem;
+
+    @media (max-width: 850px) {
+        padding: 0;
+    }
+
+    @media @mobile {
+        padding: 0;
+    }
+
+}
+
+.bouncy__info {
+    width: 50%;
+
+    max-width: 430px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.bouncy__title {
+    font-size: 1.3rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: @black;
+
+    margin-bottom: 3rem;
+}
+
+.bouncy__text {
+    font-size: 0.93rem;
+    color: @grey;
+    line-height: 1.786;
+
+    margin-bottom: 2rem;
+}
+
+.bouncy__btn {
+    text-decoration: none;
+
+    border: 2px solid @grey;
+    font-size: 1.06rem;
+    text-align: center;
+    border-radius: 25px;
+    color: @black;
+
+    padding: 0.4rem 1.8rem;
+
+    transition: border-color 0.3s linear;
+
+    &:hover {
+        border-color: @black;
+    }
+}
+
+
+.bouncy__photo {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.bouncy__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
